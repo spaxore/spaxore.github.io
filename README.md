@@ -1,4 +1,4 @@
-# spaxero — portfolio site
+# spaxore — portfolio site
 
 A single-file, terminal-themed cybersecurity portfolio for **spaxore**.
 
@@ -10,21 +10,21 @@ The site is fully self-contained: it does **not** load Google Fonts or any other
 
 Use the dedicated-user-site repository:
 
-1. Create a GitHub repository named exactly `spaxero.github.io`.
+1. Create a GitHub repository named exactly `spaxore.github.io`.
 2. Put `index.html` at the repository root.
 3. Put the `fonts/` folder next to `index.html`.
 4. Push to the `main` branch.
 5. In **Settings → Pages**, select **Deploy from a branch**, branch `main`, folder `/ (root)`.
 6. Your site will be available at:
 
-   `https://spaxero.github.io`
+   `https://spaxore.github.io`
 
 The page is static HTML/CSS/JS, so no build command or framework is required.
 
 ## Structure
 
 ```text
-spaxero.github.io/
+spaxore.github.io/
 ├── index.html
 ├── README.md
 └── fonts/
