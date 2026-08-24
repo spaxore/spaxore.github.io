@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>spaxore — Mohammed Ikbal Messaoudi</title>
-<meta name="description" content="Cybersecurity engineer specializing in NIDS, IAM, and offensive security tooling.">
+<meta name="description" content="Cybersecurity engineer specializing in NIDS, IAM, cloud security architecture, and offensive security tooling.">
 <style>
   @font-face{
     font-family: 'Inter Local';
@@ -322,7 +322,7 @@
     <h2 class="section-title">Profile</h2>
     <div class="about-grid">
       <div>
-        <p>I work at the intersection of <strong>network defense</strong> and <strong>offensive validation</strong> — building systems and then trying to break them before someone else does. My internship work reshaped a narrow complaint-classification tool into a full <strong>Zero-Trust AI Investigation Platform</strong> with an integrated red-team console.</p>
+        <p>I work at the intersection of <strong>network defense</strong>, <strong>identity architecture</strong>, and <strong>offensive validation</strong> — building systems and then trying to break them before someone else does. My internship work reshaped a narrow complaint-classification tool into a full <strong>Zero-Trust AI Investigation Platform</strong> with an integrated red-team console.</p>
         <p>I care more about tools I'd actually want to use than about portfolio optics — which is why most of what's below leans toward offensive-security tooling, SOC platforms, and identity infrastructure rather than polished demo apps.</p>
         <p>Outside of coursework and the internship, I run personal labs: domain controllers to harden, home networks to map, and the occasional Android app built from scratch.</p>
       </div>
@@ -366,7 +366,8 @@
         <h3>CLOUD, DEV &amp; INFRA</h3>
         <div class="tag-row">
           <span class="tag">Python</span><span class="tag">PowerShell</span><span class="tag">Kotlin</span>
-          <span class="tag">React + Vite</span><span class="tag">Docker</span><span class="tag">Virtualization</span>
+          <span class="tag">React + Vite</span><span class="tag">Docker</span><span class="tag">Docker Compose</span><span class="tag">Kubernetes</span>
+          <span class="tag">kind</span><span class="tag">Trivy</span><span class="tag">OPA / Rego</span><span class="tag">Virtualization</span>
         </div>
       </div>
     </div>
@@ -402,24 +403,37 @@
 
       <div class="proj-card">
         <div class="proj-head">
-          <div class="proj-name">IAM / IGA Lab</div>
-          <span class="status active">ONGOING — PERSONAL LAB</span>
+          <div class="proj-name">Image Metadata &amp; Privacy Toolkit</div>
+          <span class="status complete">COMPLETE — PROJECT 05</span>
         </div>
-        <p class="proj-desc">A self-built identity lab centered on a Windows Server 2022 domain controller, hardened and scored with PingCastle, with planned integration of MidPoint, Keycloak, HashiCorp Vault, Teleport, and Wazuh across a multi-VM environment.</p>
+        <p class="proj-desc">A local EXIF and GPS privacy toolkit with GUI and CLI workflows for inspecting image metadata, rendering location findings, and creating clean copies with metadata removed. Built for defensive privacy analysis and safe evidence handling.</p>
         <div class="tag-row">
-          <span class="tag">Windows Server</span><span class="tag">PingCastle</span><span class="tag">Keycloak</span>
-          <span class="tag">HashiCorp Vault</span><span class="tag">Teleport</span>
+          <span class="tag">Python</span><span class="tag">Pillow</span><span class="tag">EXIF</span><span class="tag">GPS Privacy</span><span class="tag">Folium</span>
+          <a class="tag" href="https://github.com/spaxore/cybersecurity-engineering-portfolio/tree/main/05-image-metadata-extractor" target="_blank" rel="noopener">View Repository</a>
         </div>
       </div>
 
       <div class="proj-card">
         <div class="proj-head">
-          <div class="proj-name">NetGuard</div>
-          <span class="status complete">PROTOTYPE</span>
+          <div class="proj-name">Local Cloud Security Architecture Lab</div>
+          <span class="status complete">COMPLETE — PROJECT 06</span>
         </div>
-        <p class="proj-desc">A root-free Android network security app built to give ordinary users visibility into what their device is talking to — a working skeleton with the core architecture in place.</p>
+        <p class="proj-desc">A free local Kubernetes security lab that compares insecure and hardened workloads, applies namespace isolation, Pod Security controls, NetworkPolicies, least-privilege RBAC, OPA policy-as-code, and Trivy misconfiguration scanning.</p>
         <div class="tag-row">
-          <span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">Coroutines</span>
+          <span class="tag">kind</span><span class="tag">Kubernetes</span><span class="tag">NetworkPolicy</span><span class="tag">RBAC</span><span class="tag">OPA</span><span class="tag">Trivy</span>
+          <a class="tag" href="https://github.com/spaxore/cybersecurity-engineering-portfolio/tree/main/06-local-cloud-security-architecture-lab" target="_blank" rel="noopener">View Repository</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-head">
+          <div class="proj-name">Identity &amp; Access Architecture Lab</div>
+          <span class="status complete">COMPLETE — PROJECT 07</span>
+        </div>
+        <p class="proj-desc">A local Keycloak and Flask identity architecture lab implementing OpenID Connect authorization-code flow with PKCE, OIDC discovery, JWKS and JWT validation, issuer checks, and server-side role-based access control with explicit allow and deny evidence.</p>
+        <div class="tag-row">
+          <span class="tag">Keycloak</span><span class="tag">OIDC</span><span class="tag">PKCE</span><span class="tag">JWT / JWKS</span><span class="tag">RBAC</span><span class="tag">Threat Modeling</span>
+          <a class="tag" href="https://github.com/spaxore/cybersecurity-engineering-portfolio/tree/main/07-identity-and-access-architecture-lab" target="_blank" rel="noopener">View Repository</a>
         </div>
       </div>
 
@@ -442,7 +456,7 @@
       <div class="exp-body">
         <h3>NIDS &amp; Cybersecurity Student</h3>
         <div class="org">ESPRIT</div>
-        <p>Coursework and lab work spanning network intrusion detection, IAM, cloud &amp; virtualization security, and applied cryptography — paired with self-directed labs and group projects like RedCell404.</p>
+        <p>Coursework and lab work spanning network intrusion detection, IAM, cloud &amp; virtualization security, and applied cryptography — paired with a structured local portfolio covering privacy engineering, Kubernetes security architecture, and Keycloak-based identity controls.</p>
       </div>
     </div>
   </section>
@@ -473,7 +487,7 @@
     { type: 'out', text: '22/tcp   open   nids-analysis    ESPRIT — NIDS & Cybersecurity' },
     { type: 'out', text: '80/tcp   open   internship       Tunisie Telecom / DCSI Kasbah' },
     { type: 'out', text: '443/tcp  open   cloud-security   Aspiring Cloud Security Architect' },
-    { type: 'out', text: '8080/tcp open   red-team-tools   ARC · RedCell404 · IAM Lab' },
+    { type: 'out', text: '8080/tcp open   security-labs   Kubernetes · Keycloak · Privacy Toolkit' },
     { type: 'out', text: 'Scan complete: 4 services open, 0 filtered.' },
   ];
 
