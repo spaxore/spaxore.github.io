@@ -323,7 +323,7 @@
     <div class="about-grid">
       <div>
         <p>I work at the intersection of <strong>network defense</strong>, <strong>identity architecture</strong>, and <strong>offensive validation</strong> — building systems and then trying to break them before someone else does. My internship work reshaped a narrow complaint-classification tool into a full <strong>Zero-Trust AI Investigation Platform</strong> with an integrated red-team console.</p>
-        <p>I care more about tools I'd actually want to use than about portfolio optics — which is why most of what's below leans toward offensive-security tooling, SOC platforms, and identity infrastructure rather than polished demo apps.</p>
+        <p>I care more about tools I'd actually want to use than about portfolio optics — which is why most of what's below leans toward and identity infrastructure rather than polished demo apps.</p>
         <p>Outside of coursework and the internship, I run personal labs: domain controllers to harden, home networks to map, and the occasional Android app built from scratch.</p>
       </div>
       <div class="stat-block">
@@ -342,7 +342,7 @@
     <h2 class="section-title">Scan Results</h2>
     <div class="skill-groups">
       <div class="skill-card">
-        <h3>NETWORK &amp; SOC</h3>
+        <h3>NETWORK SECURITY</h3>
         <div class="tag-row">
           <span class="tag">NIDS</span><span class="tag">Wazuh</span><span class="tag">pfSense / OPNsense</span>
           <span class="tag">TheHive</span><span class="tag">MISP</span><span class="tag">Cortex</span><span class="tag">n8n</span>
@@ -367,7 +367,7 @@
         <div class="tag-row">
           <span class="tag">Python</span><span class="tag">PowerShell</span><span class="tag">Kotlin</span>
           <span class="tag">React + Vite</span><span class="tag">Docker</span><span class="tag">Docker Compose</span><span class="tag">Kubernetes</span>
-          <span class="tag">kind</span><span class="tag">Trivy</span><span class="tag">OPA / Rego</span><span class="tag">Virtualization</span>
+          <span class="tag">kind</span><span class="tag">Trivy</span><span class="tag">Syft</span><span class="tag">Gitleaks</span><span class="tag">Semgrep</span><span class="tag">OPA / Rego</span><span class="tag">GitHub Actions</span><span class="tag">Virtualization</span>
         </div>
       </div>
     </div>
@@ -437,6 +437,41 @@
         </div>
       </div>
 
+      <div class="proj-card">
+        <div class="proj-head">
+          <div class="proj-name">Secure DevSecOps Supply-Chain Security Lab</div>
+          <span class="status complete">COMPLETE — PROJECT 08</span>
+        </div>
+        <p class="proj-desc">A local-first software supply-chain security pipeline that combines secret detection, source analysis, hardened container builds, Trivy image scanning, CycloneDX SBOM generation, and Open Policy Agent enforcement before delivery. GitHub Actions mirrors the core preventive checks for pushes and pull requests.</p>
+        <div class="tag-row">
+          <span class="tag">Gitleaks</span><span class="tag">Semgrep</span><span class="tag">Docker</span><span class="tag">Trivy</span><span class="tag">Syft</span><span class="tag">OPA / Rego</span><span class="tag">GitHub Actions</span>
+          <a class="tag" href="https://github.com/spaxore/cybersecurity-engineering-portfolio/tree/main/08-secure-devsecops-supply-chain-lab" target="_blank" rel="noopener">View Repository</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-head">
+          <div class="proj-name">Cloud Security Monitoring &amp; Governance Lab</div>
+          <span class="status complete">COMPLETE — PROJECT 09</span>
+        </div>
+        <p class="proj-desc">A local Kubernetes governance and configuration-assurance lab that collects selected platform state, evaluates it against an approved security baseline, identifies compliance gaps and configuration drift, and verifies remediation. This is governance assurance rather than SOC monitoring or incident response.</p>
+        <div class="tag-row">
+          <span class="tag">Kubernetes</span><span class="tag">kind</span><span class="tag">Configuration Assurance</span><span class="tag">Compliance</span><span class="tag">Drift Detection</span><span class="tag">PowerShell</span><span class="tag">Python</span>
+          <a class="tag" href="https://github.com/spaxore/cybersecurity-engineering-portfolio/tree/main/09-cloud-security-monitoring-governance-lab" target="_blank" rel="noopener">View Repository</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-head">
+          <div class="proj-name">Resilient &amp; Secure Platform Lab</div>
+          <span class="status complete">PLANNED — PROJECT 10</span>
+        </div>
+        <p class="proj-desc">A planned local resilience architecture lab focused on secure backup and recovery, failure testing, continuity controls, and restoration evidence for cloud-security platforms. The project will remain free, local, open-source, and separate from SOC operations.</p>
+        <div class="tag-row">
+          <span class="tag">Planned</span><span class="tag">Backup &amp; Recovery</span><span class="tag">Resilience Testing</span><span class="tag">Continuity</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -456,7 +491,7 @@
       <div class="exp-body">
         <h3>NIDS &amp; Cybersecurity Student</h3>
         <div class="org">ESPRIT</div>
-        <p>Coursework and lab work spanning network intrusion detection, IAM, cloud &amp; virtualization security, and applied cryptography — paired with a structured local portfolio covering privacy engineering, Kubernetes security architecture, and Keycloak-based identity controls.</p>
+        <p>Coursework and lab work spanning network intrusion detection, IAM, cloud &amp; virtualization security, and applied cryptography — paired with a structured local portfolio covering privacy engineering, Kubernetes security architecture, Keycloak-based identity controls, DevSecOps supply-chain security, and configuration governance.</p>
       </div>
     </div>
   </section>
@@ -487,7 +522,7 @@
     { type: 'out', text: '22/tcp   open   nids-analysis    ESPRIT — NIDS & Cybersecurity' },
     { type: 'out', text: '80/tcp   open   internship       Tunisie Telecom / DCSI Kasbah' },
     { type: 'out', text: '443/tcp  open   cloud-security   Aspiring Cloud Security Architect' },
-    { type: 'out', text: '8080/tcp open   security-labs   Kubernetes · Keycloak · Privacy Toolkit' },
+    { type: 'out', text: '8080/tcp open   security-labs   Kubernetes · Keycloak · DevSecOps · Governance' },
     { type: 'out', text: 'Scan complete: 4 services open, 0 filtered.' },
   ];
 
